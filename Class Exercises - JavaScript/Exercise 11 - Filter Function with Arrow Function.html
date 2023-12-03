@@ -1,0 +1,27 @@
+
+<!Doctype html>
+<head>
+<script type="text/javascript">
+
+function fun1(){
+	const marks = [67, 56, 86, 40, 72, 33];
+    document.getElementById('t1').innerHTML = 'Marks Before filtered: ' +marks;
+	const newMarks = marks.filter((m)=>{
+        if(m >=67) 
+            return m;
+        }); 
+    document.getElementById('t2').innerHTML = 'Marks After filtered: ' + newMarks;
+
+}
+
+
+</script>
+</head>
+<body>
+<form>
+	<h1 id="t1"> </h1><br>
+	<input type="button" onclick="fun1();" value="Print PassMarks >= 67">	
+    <h1 id="t2"> </h1><br>
+</form>
+</body>
+</html>

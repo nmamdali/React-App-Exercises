@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- saved from url=(0184)file:///D:/Semester%202-%202022%20-2023/CSSE3101/Course%20Materials%20Dev/Instructor%20Resources/In%20Class%20Exercises/Lesson%203-JS-ES6/Activity%207-%20ES6-Destructuring-Objects.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<script type="text/javascript">
+
+
+</script>
+</head>
+<body>
+<p id="demo">Student  46J12345 with the name Ahmed has the mark A+ in the CSSE3101.</p>
+  
+<script>
+const student = {
+  id: '46J12345',
+  name: 'Ahmed',
+  mark: 'A+',
+  course: 'CSSE3101', 
+}
+
+studentInfo(student);
+
+function studentInfo({id, name, mark, course}) {
+  const message = 'Student  ' + id + ' with the name ' + name + ' has the mark ' + mark + ' in the ' + course + '.';
+
+  document.getElementById("demo").innerHTML = message;
+}
+</script>
+
+</body></html>

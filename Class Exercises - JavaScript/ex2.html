@@ -1,0 +1,37 @@
+<!Doctype html>
+
+<head>
+    <script type="text/javascript">
+        function fun() {
+           salary = [550,300,800,400,850];
+           let bonus;
+           console.log('Salary   Bonus')
+           console.log('---------------');
+           salary.map((s)=>{
+              if(s>=500){
+                bonus = s * 10/100;
+                console.log(s+'      ' +bonus)
+              }
+              else{
+                bonus = s * 20 / 100;
+                console.log(s + '      ' + bonus)
+              }
+
+             });
+            //Find and print  bonus for each salary
+            //If salary is >= 500 bonus 10% of salary
+            //Otherwise bonus is 20% of salary
+            //Use map method and Arrow function.
+            
+           }
+           
+        
+        </script>
+</head>
+<body>
+    <form>
+        <h1>Print Result </h1>      
+        <input type="button" onclick="fun();" value="Print Result"> 
+    </form>
+</body>
+</html>

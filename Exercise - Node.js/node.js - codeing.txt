@@ -1,0 +1,39 @@
+console.log('task 1')
+console.log('task 2')
+console.log('task 3')
+----------------------------------------------------------------------------------------
+const fs = require('fs')
+fs.readFile('fread.txt',(error, data) => {
+  if (error) throw err;
+  else {
+    console.log(data.toString());
+    console.log('Read Completed');
+  }
+  
+});
+
+
+console.log('Welcome to Node.js');
+----------------------------------------------------------------------------------------
+const readData = async() => {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users")
+    const userDate = await response.json()
+    console.log(userDate)
+}
+readData()
+
+console.log("Welcome to Node.js")
+----------------------------------------------------------------------------------------
+const fs = require('fs');
+const readFile = async () =>{
+    try {
+        const data = await fs.readFileSync('fread.txt');
+        console.log(data.toString());
+    }
+    catch (err) { console.error('Failed to read file', err) };
+  
+            
+}
+
+readFile()
+console.log("Welcome to Node.js")

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+
+        const showModels = (brand) => {
+            const toyota = ['Corolla', 'Camry'];
+            const nissan = ['Sentra', 'Tida'];
+            const honda = ['Civic', 'Accord', 'CR-V'];
+
+            const modelSelect = document.getElementById("model");
+
+            while (modelSelect.options.length > 0) {
+                modelSelect.remove(0);
+            }
+
+            let models = [];
+            if (brand === "Toyota") {
+                models = toyota;
+            } else if (brand === "Nissan") {
+                models = nissan;
+            } else if (brand === "Honda") {
+                models = honda;
+            }
+
+            models.map(model => new Option(model, model))
+                .forEach(option => modelSelect.appendChild(option));
+        };
+
+        const computeTotalPrice = (price, type, year) => {
+            let totalprice = 0;
+            let tprice = type === "A" ? parseInt(price) * 0.10 : parseInt(price) * 0.05;
+            let tax = year >= 2020 ? parseInt(price) * 0.03 : parseInt(price) * 0.015;
+            totalprice = parseInt(price) + tprice + tax;
+            return totalprice;
+        };
+
+        const saveCar = () => {
+            const num = document.getElementById("num").value;
+            const brand = document.getElementById("brand").value;
+            const model = document.getElementById("model").value;
+            const price = document.getElementById("price").value;
+            const year = document.getElementById("year").value;
+            const totalprice = computeTotalPrice(price, type, year);
+            document.getElementById("cnum").innerHTML = num;
+            document.getElementById("cbrand").innerHTML = brand;
+            document.getElementById("cmodel").innerHTML = model;
+            document.getElementById("ctype").innerHTML = type;
+            document.getElementById("cyear").innerHTML = year;
+            document.getElementById("cprice").innerHTML = price;
+            document.getElementById("totalprice").innerHTML = totalprice;
+        };
+
+    </script>
+
+</head>
+
+<body>
+
+    <form>
+        <h1>Car Registration</h1>
+        <table>
+            <tr>
+                <td>Car Number:</td>
+                <td><input type="text" id="num"></td>
+            </tr>
+            <tr>
+                <td>Brand:</td>
+                <td>
+                    <select id="brand" onchange="showModels(this.value)">
+                        <option value="Toyota">Toyota</option>
+                        <option value="Nissan">Nissan</option>
+                        <option value="Honda">Honda</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Model:</td>
+                <td>
+                    <select id="model">
+                        <option></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Year:</td>
+                <td><input type="number" id="year"></td>
+            </tr>
+            <tr>
+                <td>Type:</td>
+                <td>
+                    <input type="radio" name="type" value="M"> Manual
+                    <input type="radio" name="type" value="A"> Automatic
+                </td>
+            </tr>
+            <tr>
+                <td>Price:</td>
+                <td><input type="text" id="price"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" onclick="saveCar()" value="Save">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <h1>Car Information</h1>
+    <p>Car Number Price: <span id="cnum"></span></p>
+    <p>Brand: <span id="cbrand"></span></p>
+    <p>Model: <span id="cmodel"></span></p>
+    <p>Type: <span id="ctype"></span></p>
+    <p>Year: <span id="cyear"></span></p>
+    <p>Price: <span id="cprice"></span></p>
+    <p>Total Price: <span id="totalprice"></span></p>
+
+
+</body>
+
+</body>
+
+</html>

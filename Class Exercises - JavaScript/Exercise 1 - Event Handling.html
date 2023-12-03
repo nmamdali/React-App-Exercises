@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function add()
+        {
+          let a = document.getElementById("n1").value;
+          let b = document.getElementById("n2").value;
+          let c = parseInt(a) + parseInt(b);
+          //let c = a + b;
+          document.getElementById("r1").innerHTML = c;
+          console.log(c);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="n1">Number 1</label> <input type="text" id="n1"><br>
+        <label for="n2">Number 2</label> <input type="text" id="n2"> <br>
+        <input type="button" onclick="add()" value="Add" /><br>
+        <h1 id="r1"></h1>
+    </form>
+</body>
+</html>

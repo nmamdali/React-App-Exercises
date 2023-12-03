@@ -1,0 +1,30 @@
+<!Doctype html>
+
+<head>
+    <script type="text/javascript">
+        function fun() {
+            const student = {
+                id: '46J12345',
+                name: 'Ahmed',
+                mark: 'A+',
+                course: 'CSSE3101',
+            }
+            studentInfo(student);
+        }
+        function studentInfo({ id, name, mark, course }) {
+             console.log(id);
+             console.log(name);
+             console.log(mark);
+             console.log(course);               
+             }         
+    </script>
+</head>
+
+<body>
+    <form>
+        <h1> Array Destructuring </h1>
+        <input type="button" onclick="fun();" value="Print Values">
+    </form>
+</body>
+
+</html>

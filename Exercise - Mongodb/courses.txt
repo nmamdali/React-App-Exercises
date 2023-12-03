@@ -1,0 +1,44 @@
+ [
+    {
+      "course_id": 101,
+      "course_name": "Mathematics",
+      "teacher": "Ms. Smith",
+      "schedule": "Mon/Wed/Fri 10:00 AM - 11:30 AM",
+      "room": "Room 101"
+    },
+    {
+      "course_id": 102,
+      "course_name": "Physics",
+      "teacher": "Mr. Johnson",
+      "schedule": "Tue/Thu 1:00 PM - 2:30 PM",
+      "room": "Room 102"
+    },
+    {
+      "course_id": 103,
+      "course_name": "History",
+      "teacher": "Mr. Davis",
+      "schedule": "Mon/Wed 2:00 PM - 3:30 PM",
+      "room": "Room 103"
+    },
+    {
+      "course_id": 104,
+      "course_name": "English",
+      "teacher": "Ms. Wilson",
+      "schedule": "Tue/Thu 10:00 AM - 11:30 AM",
+      "room": "Room 104"
+    },
+    {
+      "course_id": 105,
+      "course_name": "Chemistry",
+      "teacher": "Dr. Anderson",
+      "schedule": "Mon/Fri 1:00 PM - 2:30 PM",
+      "room": "Room 105"
+    },
+    {
+      "course_id": 106,
+      "course_name": "Computer Science",
+      "teacher": "Dr. Taylor",
+      "schedule": "Tue/Thu 2:00 PM - 3:30 PM",
+      "room": "Room 106"
+    }
+ ]

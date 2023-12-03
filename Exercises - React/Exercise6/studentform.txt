@@ -1,0 +1,35 @@
+<div className="container text-center col-md-5">
+          <div><h4>Students Mark</h4></div>
+          <div>
+            <form>
+                <table className="table table-bordered">
+                    <tbody>
+              
+                    <tr>
+                          <td>First Name</td> <td><input type="text" /></td>
+                    </tr>
+                    <tr>
+                          <td>Last Name</td> <td><input type="text"  /></td>
+                    </tr>  
+                     <tr>
+                          <td>Quiz Mark</td> <td><input type="text"  /></td>
+                      </tr>  
+                       <tr>
+                          <td>Midexam Mark</td> <td><input type="text"  /></td>
+                      </tr>  
+                       <tr>
+                          <td>Final Mark</td> <td><input type="text"  /></td>
+                          </tr>  
+                    </tbody>
+              </table>
+                </form>  
+              
+ </div>  
+===================================================================
+===================================================================
+1) Install bootstrap
+        npm install bootstrap
+
+2) Import the following file in index.js
+
+     import 'bootstrap/dist/css/bootstrap.css'

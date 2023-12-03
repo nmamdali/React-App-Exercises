@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        /*-----------------------------------------------------------
+        -------------Write JavaScript FUnction-----------------------
+        -------------------------------------------------------------
+        -------------------------------------------------------------
+        ------------------------------------------------------------
+        ------------------------------------------------------------*/
+        
+        function computeTotal()
+        {
+          let qty = document.getElementById("n1").value;
+          let price = document.getElementById("n2").value;
+          let type = document.getElementById("n3").value;
+          let sub_total = qty * price;
+          if (type==='cash')
+              fee = 3;
+          else
+              fee = 5
+          total = sub_total + fee
+          
+          document.getElementById("r2").innerHTML ='Sub Total = '+ sub_total;
+          //document.getElementById("r3").innerHTML = 'Delivery Fee = ' + fee;
+          document.getElementById("r3").innerHTML = 'Total = ' + total;
+
+        }
+    </script>
+</head>
+<body>
+    <form class="form">
+        <label for="n1">Quantity:</label> <input type="text" id="n1"><br>
+        <label for="n2">Price</label> <input type="text" id="n2"> <br>
+        <label for="n3">Payment Type</label>
+              <select name='type' id="n3">
+                <option value="cash">Cash</option>
+                 <option value="card">Card</option>
+              </select> <br>
+        <input type="button" onclick="computeTotal()" value="Buy Now" /><br>
+        <h1 id="r1">Order Summary</h1>
+        <h3 id="r2"></h3>
+        <h3 id="r3"></h3>
+
+    </form>
+</body>
+</html>

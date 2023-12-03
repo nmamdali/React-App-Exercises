@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	function changeText(id) {
+		id.innerHTML = "Ooops!";
+	}
+	function changeColor(id) {
+		id.style.color = "Blue";
+	}
+	
+</script>
+</head>
+<body>
+
+<h1 onclick="changeText(this)">Click on this text!</h1>
+<h1 onMouseover="changeColor(this)">Click on this text!</h1>
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!Doctype html>
+
+<head>
+    <script type="text/javascript">
+       const fun =() => {
+
+            year = document.getElementById('year').value;
+            name = document.getElementById('name').value;
+            document.getElementById('uname').innerHTML = "Hello, " + name;
+            document.getElementById('age').innerHTML = "You age is : " + computeAge(year);
+        }
+
+        const computeAge = (year) => {
+
+            const d = new Date();
+            let y = d.getFullYear();
+            age = y - year;
+
+            return age;
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <h1> What is your age? </h1>
+        Enter name: <input type="text" id="name">
+        Enter year of birth: <input type="number" id="year">
+        <input type="button" onclick="fun();" value="Compute Age">
+        <h1 id="uname"></h1>
+        <h1 id="age"></h1>
+    </form>
+
+</body>
+
+</html>

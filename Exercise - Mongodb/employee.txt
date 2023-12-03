@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "position": "Software Engineer",
+      "department": "Engineering",
+      "salary": 80000,
+      "skills": ["Java", "Python", "JavaScript"]
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "position": "Marketing Specialist",
+      "department": "Marketing",
+      "salary": 60000,
+      "skills": ["Social Media Marketing", "Content Creation", "Analytics"]
+    },
+    {
+      "id": 3,
+      "name": "Charlie Davis",
+      "position": "Financial Analyst",
+      "department": "Finance",
+      "salary": 70000,
+      "skills": ["Financial Modeling", "Data Analysis", "Excel"]
+    },
+    {
+      "id": 1,
+      "name": "John Doe",
+      "position": "Software Engineer",
+      "department": "Engineering",
+      "salary": 90000,
+      "skills": ["Java", "Python", "JavaScript"]
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "position": "Marketing Specialist",
+      "department": "Marketing",
+      "salary": 75000,
+      "skills": ["Social Media Marketing", "Content Creation", "Analytics"]
+    },
+    {
+      "id": 3,
+      "name": "Bob Johnson",
+      "position": "Financial Analyst",
+      "department": "Finance",
+      "salary": 80000,
+      "skills": ["Financial Modeling", "Data Analysis", "Excel"]
+    }
+  ]
+

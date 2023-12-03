@@ -1,0 +1,22 @@
+<!Doctype html>
+
+<head>
+    <script type="text/javascript">
+        function fun() {
+            marks = [56, 78, 90, 45, 67];
+            passedMarks = marks.filter((m)=> {
+                if (m < 67)
+                  return m
+                }
+             );
+             console.log(passedMarks);
+            }            
+        </script>
+</head>
+<body>
+    <form>
+        <h1> Map Method - Arrow Function </h1>      
+        <input type="button" onclick="fun();" value="Print Result"> 
+    </form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        /*-----------------------------------------------------------
+        -------------Write JavaScript FUnction-----------------------
+        -------------------------------------------------------------
+        -------------------------------------------------------------
+        ------------------------------------------------------------
+        ------------------------------------------------------------*/
+        
+        function computePay()
+        {
+          let exp = document.getElementById("n1").value;
+          let basic_salary = parseInt( document.getElementById("n2").value);
+          let grade = document.getElementById("n3").value;
+          let gross_salary;
+          if (grade==='A')
+              gross_salary = basic_salary + 2/100 * basic_salary;
+          else if (grade === 'B')
+               gross_salary = basic_salary + 3 / 100 * basic_salary;
+          else
+                gross_salary = basic_salary + 5 / 100 * basic_salary;
+                
+          let net_salary = gross_salary - 2/100 * basic_salary;
+          
+          document.getElementById("r2").innerHTML ='Gross Salary = '+ gross_salary;
+          //document.getElementById("r3").innerHTML = 'Delivery Fee = ' + fee;
+          document.getElementById("r3").innerHTML = 'Net Salary = ' + net_salary;
+
+        }
+    </script>
+</head>
+<body>
+    <form class="form">
+        <label for="n1">Number of Years Experience:</label> <input type="text" id="n1"><br>
+        <label for="n2">Basic Salary</label> <input type="text" id="n2"> <br>
+        <label for="n3">Employee Grade</label>
+              <select name='type' id="n3">
+                 <option value="A">A</option>
+                 <option value="B">B</option>
+                 <option value="C">C</option>
+              </select> <br>
+        <input type="button" onclick="computePay()" value="Calaculate" /><br>
+        <h1 id="r1">Pay Slip</h1>
+        <h3 id="r2"></h3>
+        <h3 id="r3"></h3>
+
+    </form>
+</body>
+</html>
